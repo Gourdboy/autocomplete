@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Kissy-autocomplete : Autocomplete Widget ,suport default recommend" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Kissy-autocomplete</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Gourdboy/kissy-autocomplete">View on GitHub</a>
+
+          <h1 id="project_title">Kissy-autocomplete</h1>
+          <h2 id="project_tagline">Autocomplete Widget ,suport default recommend</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/Gourdboy/kissy-autocomplete/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/Gourdboy/kissy-autocomplete/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a name="autocomplete" class="anchor" href="#autocomplete"><span class="octicon octicon-link"></span></a>Autocomplete</h2>
+
+<ul>
+<li>版本：1.0</li>
+<li>API：<a href="http://gallery.kissyui.com/autocomplete/1.0/guide/index.html">http://gallery.kissyui.com/autocomplete/1.0/guide/index.html</a>
+</li>
+<li>demo：<a href="http://gallery.kissyui.com/autocomplete/1.0/demo/index.html">http://gallery.kissyui.com/autocomplete/1.0/demo/index.html</a>
+</li>
+</ul><h2>
+<a name="" class="anchor" href="#"><span class="octicon octicon-link"></span></a>功能</h2>
+
+<ul>
+<li>支持本地或远程，并对匹配结果进行二次开发</li>
+<li>支持热门推荐，及没有任何输入时暂时默认推荐内容</li>
+<li>支持多个项的输入，自行指定分隔符</li>
+<li>更多演示请看DEMO和查阅API</li>
+</ul><h2>
+<a name="-1" class="anchor" href="#-1"><span class="octicon octicon-link"></span></a>快速使用</h2>
+
+<div class="highlight"><pre><span class="nx">S</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">'gallery/autocomplete/1.0/index'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">S</span><span class="p">,</span> <span class="nx">Autocomplete</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">autocomplete</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Autocomplete</span><span class="p">({</span>
+    <span class="nx">inputNode</span>        <span class="o">:</span> <span class="s1">'#J_NeCity'</span><span class="p">,</span>
+    <span class="nx">source</span>           <span class="o">:</span> <span class="s1">'http://s.jipiao.trip.taobao.com/city_search.do?lines={maxResults}&amp;q={query}'</span><span class="p">,</span>
+    <span class="nx">resultListLocator</span><span class="o">:</span> <span class="s1">'result'</span><span class="p">,</span><span class="c1">//指定返回数据里的数组位置</span>
+    <span class="nx">resultTextLocator</span><span class="o">:</span> <span class="s1">'cityName'</span><span class="p">,</span><span class="c1">//指定回填的文本内容</span>
+  <span class="nx">hotSource</span> <span class="o">:</span> <span class="s1">'http://www.taobao.com/go/rgn/trip/chinahotcity_jsonp.php'</span><span class="c1">//不指定及没有热门推荐，必须按照此数据模板提供，其他数据格式需要自行重新配置hotResultsFormatter和hotResultsLocator</span>
+<span class="p">});</span>
+<span class="p">})</span>
+</pre></div>
+
+<h2>
+<a name="changelog" class="anchor" href="#changelog"><span class="octicon octicon-link"></span></a>changelog</h2>
+
+<h3>
+<a name="v10" class="anchor" href="#v10"><span class="octicon octicon-link"></span></a>V1.0</h3>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Kissy-autocomplete maintained by <a href="https://github.com/Gourdboy">Gourdboy</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
